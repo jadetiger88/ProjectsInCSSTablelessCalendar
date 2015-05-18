@@ -1,5 +1,9 @@
 body {
-	font-family: Tahoma
+	font-family: Tahoma;
+}
+
+#calendar_wrap {
+	padding: 20px;
 }
 
 #calendar {
@@ -33,6 +37,7 @@ body {
 #calendar ul.weekdays {
 	height: 40px;
 	background-color: #333;
+	width: 99.52%;
 }
 
 #calendar ul.weekdays li{
@@ -47,6 +52,7 @@ body {
 }
 #calendar .days li {
 	height: 180px; 
+	overflow: auto;
 }
 
 #calendar .days li:hover {
@@ -69,7 +75,7 @@ body {
 	font-size: 13px;
 	border-radius: 4px;
 	padding: 5px;
-	margin-top: 40px;
+	margin-top: 5px;
 	margin-bottom: 5px;
 	color: #666;
 	line-height: 14px;
@@ -88,4 +94,23 @@ body {
 #calendar .other_month {
 	background-color: #f5f5f5; 
 	color: #666; 
+}
+
+@media(max-width: 768px) {
+
+	#calendar .weekdays, #calendar .other_month {
+		display: none; 
+	}
+
+	#calendar li {
+		height: auto !important; 
+		width: 100%; 
+		border: 1px solid #ededed;
+		padding: 10px; 
+		margin-bottom: -1px;
+	}
+
+	#calendar .date {
+		float: none; 
+	}
 }
