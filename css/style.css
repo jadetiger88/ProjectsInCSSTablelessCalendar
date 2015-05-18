@@ -52,7 +52,6 @@ body {
 }
 #calendar .days li {
 	height: 180px; 
-	overflow: auto;
 }
 
 #calendar .days li:hover {
