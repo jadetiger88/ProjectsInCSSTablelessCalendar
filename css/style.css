@@ -96,7 +96,7 @@ body {
 	color: #666; 
 }
 
-@media(max-width: 768px) {
+@media(max-width: 700px) {
 
 	#calendar .weekdays, #calendar .other_month {
 		display: none; 
